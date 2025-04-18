@@ -12,7 +12,7 @@ function App() {
     if (!agent) return
     const response = await agent.getAuthorFeed({
       actor: value,
-      filter: 'posts_and_author_threads'
+      filter: 'posts_no_replies'
     })
     setData(response.data.feed)
   }
