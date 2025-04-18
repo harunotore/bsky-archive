@@ -4,9 +4,6 @@ import { useAgent } from '../providers/AgentProvider';
 import { FeedViewPost } from '@atproto/api/dist/client/types/app/bsky/feed/defs';
 import ArchiveFeed from '../components/ArchiveFeed/ArchiveFeed';
 
-
-
-
 function App() {
   const [data, setData] = useState<FeedViewPost[]>([])
   const { agent } = useAgent()
